@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.swp
+*.swo
+*.env
+*.env.*
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# SQLite / DB files (if any local testing)
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# Byte-compiled / cache files
+*.egg-info/
+dist/
+build/
+
+# Uploads (if you store locally, otherwise remove)
+uploads/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Uvicorn auto reload
+*.pid
