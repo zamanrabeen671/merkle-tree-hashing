@@ -43,4 +43,4 @@ async def verify(file_id: str, file: UploadFile, db=Depends(get_db)):
         "valid": current_root == record.merkle_root,
         "stored_root": record.merkle_root,
         "current_root": current_root
-    }
+}
