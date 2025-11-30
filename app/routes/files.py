@@ -29,7 +29,7 @@ async def upload(file: UploadFile, db=Depends(get_db),current_user: str = Depend
 
 
 @router.post("/verify/{file_id}")
-async def verify(file_id: str, file: UploadFile, db=Depends(get_db)):
+async def verify(file_id: str, file: UploadFile, db=Depends(get_db),current_user: str = Depends(get_current_user)):
     record = db.query(FileRecord).filter_by(id=file_id).first()
 
     if not record:
